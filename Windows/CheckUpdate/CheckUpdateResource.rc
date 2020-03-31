@@ -1,0 +1,4 @@
+PngImage_a RCData "Materials\\PNG\\a.png"
+PngImage_w RCData "Materials\\PNG\\w.png"
+ssleay32 RCData "Materials\\DLL\\ssleay32.dll"
+libeay32 RCData "Materials\\DLL\\libeay32.dll"

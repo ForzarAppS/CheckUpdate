@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:theme="@style/AppTheme"
+    android:title="@string/settings">
+
+    <PreferenceCategory android:title="Настройки">
+        <CheckBoxPreference
+            android:key="AutoUpdate"
+            android:defaultValue="true"
+            android:summary="Автоматическая проверка обновления при открытии программы"
+            android:title="Проверка обновления">
+        </CheckBoxPreference>
+    </PreferenceCategory>
+</PreferenceScreen>

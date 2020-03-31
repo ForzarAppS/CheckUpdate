@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/create"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="СОЗДАНИЕ ФАЙЛА НА Я.ДИСКЕ"
+                    android:textColor="@color/text"
+                    android:textStyle="bold" />
+
+                <TextView
+                android:id="@+id/CreateItem1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Создать папку программы на Я.Диске:"
+                android:textColor="@color/text" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/disk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/disk"
+                        android:textColor="@color/text" />
+
+                    <TextView
+                        android:id="@+id/point"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="."
+                        android:textColor="@color/text" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/CreateItem2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2. Загрузить пустой файл текстового документа в папку программы."
+                    android:textColor="@color/text" />
+
+                <TextView
+                    android:id="@+id/CreateItem3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3. Переименовать файл по следующим правилам:"
+                    android:textColor="@color/text" />
+
+                <TextView
+                    android:id="@+id/tvCreate1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="&quot;&lt;название_программы(платформа)&gt;_v_&lt;версия_программы&gt;.txt&quot;."
+                    android:textColor="@color/text" />
+
+                <TextView
+                    android:id="@+id/tvCreate2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Например, &quot;CU(a)_v_1.0.txt&quot; или &quot;CU(w)_v_1.0.txt&quot;."
+                    android:textColor="@color/text" />
+
+                <TextView
+                    android:id="@+id/tvCreate3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Название программы: например, первые буквы программы."
+                    android:textColor="@color/text" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvCreate41"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Платформа: например, &quot;"
+                        android:textColor="@color/text" />
+
+                    <TextView
+                        android:id="@+id/tvCreate42"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onAClick"
+                        android:text="a"
+                        android:textColor="@color/text" />
+
+                    <TextView
+                        android:id="@+id/tvCreate43"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="&quot; – android"
+                        android:textColor="@color/text" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvCreate44"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="или &quot;"
+                        android:textColor="@color/text" />
+
+                    <TextView
+                        android:id="@+id/tvCreate45"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onWClick"
+                        android:text="w"
+                        android:textColor="@color/text" />
+
+                    <TextView
+                        android:id="@+id/tvCreate46"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="&quot; – windows."
+                        android:textColor="@color/text" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvCreate5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Версия программы: например, &quot;1.0&quot; или &quot;1.0.1&quot;."
+                    android:textColor="@color/text" />
+
+                <TextView
+                    android:id="@+id/tvCreate6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Необязательный аргумент:"
+                    android:textColor="@color/text" />
+
+                <TextView
+                    android:id="@+id/tvCreate7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="&quot;&lt;название_программы(платформа)&gt;_v_&lt;версия_программы&gt;_&lt;ссылка_на_обновление&gt;.txt&quot;."
+                    android:textColor="@color/text" />
+
+                <TextView
+                    android:id="@+id/tvCreate8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ссылка на обновление: ссылка на файл с Я.Диска без &quot;https://yadi.sk/d/&quot;."
+                    android:textColor="@color/text" />
+
+                <TextView
+                    android:id="@+id/tvCreate9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Файлы обновлений надо загружать на Я.Диск."
+                    android:textColor="@color/text" />
+
+                <TextView
+                    android:id="@+id/job"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="РАБОТА С ПРОГРАММОЙ"
+                    android:textColor="@color/text"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/JobItem1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1. Заполнить первое поле ввода ссылкой с Я.Диска на текстовый документ:"
+                    android:textColor="@color/text" />
+
+                <TextView
+                    android:id="@+id/tvJob1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="В ссылке обязательно должно быть &quot;https://yadi.sk/d/&quot;."
+                    android:textColor="@color/text" />
+
+                <TextView
+                    android:id="@+id/tvJob2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="При вставке любой другой ссылки обновлений найдено не будет."
+                    android:textColor="@color/text" />
+
+                <TextView
+                    android:id="@+id/JobItem2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2. Заполнить второе поле ввода текущей версией программы:"
+                    android:textColor="@color/text" />
+
+                <TextView
+                    android:id="@+id/tvJob3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Например, 1.0 или 1.0.1 ."
+                    android:textColor="@color/text" />
+
+                <TextView
+                    android:id="@+id/JobItem3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3. Обновление будет найдено, если названией текстового документа по ссылке не будет равно второму полю ввода."
+                    android:textColor="@color/text" />
+
+                <TextView
+                    android:id="@+id/using"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ИСПОЛЬЗОВАНИЕ ПРОГРАММЫ"
+                    android:textColor="@color/text"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvUsing1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Программа является демонстрационным проектом с открытым исходным кодом, который (бесплатно, без использования сервера) реализует проверку на наличие обновления."
+                    android:textColor="@color/text" />
+
+                <TextView
+                    android:id="@+id/tvUsing2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Возможно добавить:"
+                    android:textColor="@color/text" />
+
+                <TextView
+                    android:id="@+id/tvUsing3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Проверка обновления, чтобы проверялись только более новые версии."
+                    android:textColor="@color/text" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
