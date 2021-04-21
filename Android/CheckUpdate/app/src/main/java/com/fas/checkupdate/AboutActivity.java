@@ -40,7 +40,7 @@ public class AboutActivity extends AppCompatActivity {
 
         try {
             PackageInfo pInfo = this.getPackageManager().getPackageInfo(getPackageName(), 0);
-            NowVersion.setText("v"+pInfo.versionName+" (01.04.2020)");
+            NowVersion.setText("v"+pInfo.versionName+" (21.04.2021)");
         } catch (PackageManager.NameNotFoundException e) {
             e.printStackTrace();
         }
@@ -57,8 +57,8 @@ public class AboutActivity extends AppCompatActivity {
     public void onNewClick(View view) {
         String str="";
 
-        /*str=str+"v1.0 (01.04.2020):"+"\n";
-        str=str+"▶ Релизная версия"+"\n"+"\n";*/
+        str=str+"v1.1 (21.04.2021):"+"\n";
+        str=str+"▶ Исправлена опечатка во вкладке «Помощь»"+"\n"+"\n";
 
         str=str+"v1.0 (01.04.2020):"+"\n";
         str=str+"▶ Релизная версия";

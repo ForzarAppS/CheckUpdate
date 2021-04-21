@@ -223,7 +223,7 @@
                     android:id="@+id/JobItem3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="3. Обновление будет найдено, если названией текстового документа по ссылке не будет равно второму полю ввода."
+                    android:text="3. Обновление будет найдено, если название текстового документа по ссылке не будет равно второму полю ввода."
                     android:textColor="@color/text" />
 
                 <TextView

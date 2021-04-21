@@ -406,7 +406,7 @@ object Form4: TForm4
     Width = 159
     Height = 25
     AutoSize = False
-    Caption = 'v1.0 (1 '#1072#1087#1088#1077#1083#1103' 2020)'
+    Caption = 'v1.1 (21 '#1072#1087#1088#1077#1083#1103' 2021)'
     Layout = tlCenter
   end
   object Label7: TLabel
